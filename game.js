@@ -8,7 +8,7 @@ var started = false;
 
 var level = 0;
 
-$(document).touchstart(function(event) {
+$("h1").touchstart(function(event) {
 
   if (!started) {
     //        $("h1").text("Level "+level);
