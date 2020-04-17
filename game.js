@@ -8,6 +8,15 @@ var started = false;
 
 var level = 0;
 
+$(document).ontouchstart(function(event) {
+
+  if (!started) {
+    //        $("h1").text("Level "+level);
+    nextSequence();
+    started = true;
+  }
+})
+
 $(document).keydown(function(event) {
 
   if (!started) {
