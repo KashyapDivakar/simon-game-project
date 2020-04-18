@@ -45,8 +45,16 @@ function nextSequence() {
   userClickedPattern = [];
 
   level++;
-
-  $("h1").text("Level " + level);
+  if (level > 5 && level < 10 ){
+  $("h1").text("Level " + level +  "😉");
+  }
+ else if (level > 10 && level < 20  ){
+  $("h1").text("Level " + level + "🤩");
+  }
+  else
+  {
+  }
+  
   var randomNumber = Math.floor(Math.random() * 4);
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
@@ -71,7 +79,7 @@ function checkAnswer(currentLevel) {
     setTimeout(function() {
       $("body").removeClass("game-over");
       }, 200);
-      $("h1").text("Game Over, press any key to restart");
+      $("h1").text("Awwwww! 🤪 Game Over , press any key to restart or Touch here");
     startOver();  }
 }
 
