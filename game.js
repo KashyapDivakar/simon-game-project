@@ -81,7 +81,7 @@ function checkAnswer(currentLevel) {
     setTimeout(function() {
       $("body").removeClass("game-over");
       }, 200);
-      $("h1").text("Awwwww! 🤪 Game Over , press any key to restart or Touch here");
+      $("h1").text("you lose Rishika pagal! 🤪 Game Over , press any key to restart or Touch here");
     startOver();  }
 }
 
