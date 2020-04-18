@@ -45,15 +45,16 @@ function nextSequence() {
   userClickedPattern = [];
 
   level++;
-  if (level > 5 && level < 10 ){
-  $("h1").text("Level " + level +  "😉");
+  
+  if ((level > 5) && (level < 10) ){
+  $("h1").text("Level " + level +  "  😀");
   }
- else if (level > 10 && level < 30  ){
-  $("h1").text("Level " + level + "🤩");
+ else if ((level > 5) && (level < 10) ){
+  $("h1").text("Level " + level + "  🤩");
   }
   else
   {
-      $("h1").text("Level " + level +  "🙂");
+      $("h1").text("Level " + level +  "  🙂");
   }
   
   var randomNumber = Math.floor(Math.random() * 4);
