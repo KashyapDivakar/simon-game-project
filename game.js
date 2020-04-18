@@ -8,7 +8,7 @@ var started = false;
 
 var level = 0;
 
-$("h1").touchstart(function(event) {
+$("level-tite").touchstart(function(event) {
 
   if (!started) {
     //        $("h1").text("Level "+level);
@@ -16,6 +16,7 @@ $("h1").touchstart(function(event) {
     started = true;
   }
 })
+
 
 $(document).keydown(function(event) {
 
