@@ -8,16 +8,6 @@ var started = false;
 
 var level = 0;
 
-$("level-title").touchstart(function(event) {
-
-  if (!started) {
-    //        $("h1").text("Level "+level);
-    nextSequence();
-    started = true;
-  }
-})
-
-
 $(document).keydown(function(event) {
 
   if (!started) {
