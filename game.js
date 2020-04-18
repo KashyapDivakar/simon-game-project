@@ -8,7 +8,7 @@ var started = false;
 
 var level = 0;
 
-$("h1").on("mouseover", function() {
+$("h1").on("touchstart", function() {
 
   if (!started) {
     //        $("h1").text("Level "+level);
