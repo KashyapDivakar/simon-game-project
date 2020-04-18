@@ -8,6 +8,17 @@ var started = false;
 
 var level = 0;
 
+$("h1").on("mouseover", function() {
+
+  if (!started) {
+    //        $("h1").text("Level "+level);
+    
+    nextSequence();
+    started = true;
+  }
+})
+
+
 $(document).keydown(function(event) {
 
   if (!started) {
